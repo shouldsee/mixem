@@ -90,6 +90,7 @@ def em(data, distributions, initial_weights=None,
     else:
         resp = init_resp
         _m_step()
+        
     wresp  = weight_resp(resp)
     
     while True:
@@ -150,6 +151,5 @@ def em(data, distributions, initial_weights=None,
         last_ll[0] = log_likelihood
 
         iteration += 1
-
     ### Return full history for debugging
     return weight, distributions, last_ll[::-1]

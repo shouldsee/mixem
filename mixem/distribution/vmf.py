@@ -19,6 +19,7 @@ class vmfDistribution(Distribution):
                  beta = 1.,
                  normalizeSample = False,
                  sample_weights = None,
+                 meanNorm=None, ###dummy
                 ):
         mu = np.array(mu)
         
